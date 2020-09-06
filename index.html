@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:текста="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>LAB1_Petrukhno M.R</title>
-    <script src="./First%20task.js" ></script>
 </head>
 <body>
 <label>Первое задание</label>
-<p>Ввод текста:<input id="first"></p>
-<p>Ввод текста:<input id="second"></p>
-<p>Ввод текста:<input id="third"></p>
+<p>Ввод текста:<label for="first"></label><input id="first"></p>
+<p>Ввод текста:<label for="second"></label><input id="second"></p>
+<p>Ввод текста:<label for="third"></label><input id="third"></p>
 
 <button onclick="process()">Отобразить результат</button>
 
 <p><label>Второе задание</label></p>
-    Ввод текста:<input id="input">
+    Ввод текста:<label for="input"></label><input id="input">
     <button onclick="setText()">Отобразить текст</button>
     <script>
         function setText()
         {
-            let x=document.getElementById('input').value
-            document.getElementById('res').innerHTML=x
+            document.getElementById('res').innerHTML=document.getElementById('input').value
         }
     </script>
     <div id="res"></div>
