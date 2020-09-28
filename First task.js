@@ -3,7 +3,7 @@ function first(x) {
     let y=String()
     //console.log("First task")
     for (let i = 0; i < arr.length; i++) {
-        arr[i]=i+1
+        arr[i]=i
         y+=arr[i].toString()+" "
         //console.log(arr[i])
     }
